@@ -1,7 +1,7 @@
 {
   "name": "my-ai-helper",
-  "displayName": "My AI Helper",
-  "description": "",
+  "displayName": "KensukeGPT",
+  "description": "A simple AI helper extension for Visual Studio Code.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "my-ai-helper.helloWorld",
-        "title": "Hello World"
+        "command": "my-ai-helper.ai-helper",
+        "title": "Open AI Helper"
       }
     ]
   },
@@ -28,14 +28,14 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.97.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.97.0",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
-    "eslint": "^9.19.0",
-    "typescript": "^5.7.3",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3"
   }
 }

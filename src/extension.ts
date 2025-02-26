@@ -1,26 +1,26 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+// extension.ts
 import * as vscode from 'vscode';
+import { createWebviewPanel } from './webview';
+import { getChatbotResponse } from './chatbot'; 
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+/**
+ * Activates the extension.
+ * 
+ * @param context - The extension context provided by VS Code.
+ */
 export function activate(context: vscode.ExtensionContext) {
+    // Log a message to indicate that the extension is now active
+    console.log('Your extension "my-ai-helper" is now active!');
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "my-ai-helper" is now active!');
+    // Register the command to open the chat.
+    // When the command is invoked, it will create and display a webview panel.
+    const disposable = vscode.commands.registerCommand('my-ai-helper.ai-helper', () => {
+        createWebviewPanel(context);
+    });
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('my-ai-helper.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from My AI Helper!');
-	});
-
-	context.subscriptions.push(disposable);
+    // Add the disposable to the context's subscriptions
+    // This ensures that the command is properly disposed of when the extension is deactivated
+    context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}

@@ -1,71 +1,64 @@
-# my-ai-helper README
+# KensukeGPT - AI Helper
 
-This is the README for your extension "my-ai-helper". After writing up a brief description, we recommend including the following sections.
+Welcome to **KensukeGPT**, your AI assistant seamlessly integrated into Visual Studio Code! This extension provides a convenient chatbot helper to assist you with programming, project management, and more, enhancing your productivity and learning experience.
 
-## Features
+## 🚀 Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Interactive Chat Interface**: Engage in dynamic conversations with the AI to ask programming questions and receive instant responses.
+- **Tailored Responses**: Get customized answers based on your specific queries across a variety of topics.
+- **Multi-Language Support**: Receive assistance with a wide range of programming languages, including Python, JavaScript, Java, and more.
+- **Open AI Help**: Access comprehensive AI assistance for tasks such as code explanations, debugging tips, and best practices in software development. Just type your question, and KensukeGPT will provide relevant information and guidance.
 
-For example if there is an image subfolder under your extension project workspace:
+![Chat Interface](../my-ai-helper/src/assets/chat_interface.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+> **Tip**: Check out the animated GIF in the assets folder to see the chatbot in action!
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 📋 Requirements
 
-## Requirements
+To use KensukeGPT, ensure you have the following installed:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [Visual Studio Code](https://code.visualstudio.com/) (version 1.50 or later)
 
-## Extension Settings
+### 📥 Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+To install the necessary dependencies, run the following command in your terminal:
 
-For example:
+```bash
+npm install
+```
 
-This extension contributes the following settings:
+## ⚙️ Extension Settings
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+KensukeGPT allows you to customize your experience through the following settings:
 
-## Known Issues
+- `kensukeGPT.enable`: Enable or disable the AI helper.
+- `kensukeGPT.customGreeting`: Set a personalized greeting for the chatbot.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 🐞 Known Issues
 
-## Release Notes
+- **Response Accuracy**: The AI may not always provide accurate answers. Users are encouraged to verify critical information independently.
+- **Performance Variability**: Response times may vary based on the complexity of user queries.
 
-Users appreciate release notes as you update your extension.
+## 📜 Change Log
 
-### 1.0.0
+All notable changes to the KensukeGPT extension will be documented in [this](CHANGELOG.md) file.
 
-Initial release of ...
+## 📖 Following Extension Guidelines
 
-### 1.0.1
+Ensure you’ve read through the [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) and follow best practices for creating your extension.
 
-Fixed issue #.
+## ✍️ Working with Markdown
 
-### 1.1.0
+You can author your README using Visual Studio Code. Here are some useful keyboard shortcuts:
 
-Added features X, Y, and Z.
+- Split the editor: `Cmd+\` (macOS) or `Ctrl+\` (Windows/Linux)
+- Toggle preview: `Shift+Cmd+V` (macOS) or `Shift+Ctrl+V` (Windows/Linux)
+- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
----
+## 🔗 For More Information
 
-## Following extension guidelines
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using KensukeGPT!**
