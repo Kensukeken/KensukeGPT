@@ -9,7 +9,7 @@ Welcome to **KensukeGPT**, your AI assistant seamlessly integrated into Visual S
 - **Multi-Language Support**: Receive assistance with a wide range of programming languages, including Python, JavaScript, Java, and more.
 - **Open AI Help**: Access comprehensive AI assistance for tasks such as code explanations, debugging tips, and best practices in software development. Just type your question, and KensukeGPT will provide relevant information and guidance.
 
-![Chat Interface](../my-ai-helper/src/assets/chat_interface.gif)
+![Chat Interface](https://github.com/Kensukeken/KensukeGPT/blob/main/src/assets/chat_interface.gif)
 
 > **Tip**: Check out the animated GIF in the assets folder to see the chatbot in action!
 
